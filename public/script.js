@@ -26,7 +26,7 @@ if (window.location.pathname === "/lads") {
 }
 
 if (window.location.pathname === "/testevent") {
-    defaultEvent = "Test";
+    defaultEvent = "Test 11/06/2026";
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -39,9 +39,9 @@ document.addEventListener("DOMContentLoaded", function () {
         loadLeaderboards(defaultEvent);
         return;
     }
-    if (defaultEvent === "Test") {
+    if (defaultEvent === "Test 11/06/2026") {
         selectedPanel.src = "libs/2026backdrop.png";
-        selectedPanel.alt = "Test";
+        selectedPanel.alt = "Test 11/06/2026";
         loadLeaderboards(defaultEvent);
         return;
     }
