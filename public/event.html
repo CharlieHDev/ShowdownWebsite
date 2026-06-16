@@ -25,6 +25,26 @@
     <title>Showdown - Season Three</title>
 </head>
 <body>
+    <script>
+        var countDownDate = new Date("2026-07-11T18:00:00Z").getTime();
+
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("event-countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
     <header>
         <section class="feature">
             <video autoplay muted loop playsinline class="bg-video">
@@ -152,8 +172,8 @@
             </section>
         </section> 
         <section class="panel" id="event-date">
-            <h1>Event Date:</h1>
-            <p>?? : ?? : ??</p>
+            <h1>Next Event:</h1>
+            <p id="event-countdown">?? : ?? : ??</p>
         </section>
         <section class="panel" id="event-info">
             <section id="welcome">
