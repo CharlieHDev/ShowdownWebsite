@@ -1,7 +1,7 @@
 const pathParts = window.location.pathname.split('/');
 const playerName = pathParts[2];
 const container = document.getElementById("player-info");
-const poses = ["default", "marching", "walking", "crouching", "ultimate", "pointing", "kicking", "lunging", "criss_cross", "cheering", "relaxing", "sleeping", "dead", "archer", "mojavatar", "reading"];
+// const poses = ["default", "marching", "walking", "crouching", "ultimate", "pointing", "kicking", "lunging", "criss_cross", "cheering", "relaxing", "sleeping", "dead", "archer", "mojavatar", "reading"];
 const searchInput = document.getElementById("player-search");
 const suggestionsBox = document.getElementById("suggestions");
 
@@ -52,10 +52,10 @@ async function loadPlayerData(playerName) {
 
     const randomIndex = Math.floor(Math.random() * poses.length);
 
-    const pose = poses[randomIndex];
+    // const pose = poses[randomIndex];
 
     const playerSkin = document.createElement("div");
-    playerSkin.innerHTML = `<img src="https://starlightskins.lunareclipse.studio/render/${pose}/${playerUUID}/full" alt="${playerName}">`;
+    playerSkin.innerHTML = `<img src="https://render.crafty.gg/3d/bust/${playerUUID}" alt="${playerName}">`;
     playerSkin.id = "skin-container";
     container.appendChild(playerSkin);
 
