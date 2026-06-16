@@ -50,7 +50,7 @@ async function loadPlayerData(playerName) {
 
     container.innerHTML = ""; // clear previous
 
-    const randomIndex = Math.floor(Math.random() * poses.length);
+    // const randomIndex = Math.floor(Math.random() * poses.length);
 
     // const pose = poses[randomIndex];
 
