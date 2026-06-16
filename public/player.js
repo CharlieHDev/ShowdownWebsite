@@ -55,7 +55,7 @@ async function loadPlayerData(playerName) {
     // const pose = poses[randomIndex];
 
     const playerSkin = document.createElement("div");
-    playerSkin.innerHTML = `<img src="https://render.crafty.gg/3d/bust/${playerUUID}" alt="${playerName}">`;
+    playerSkin.innerHTML = `<img src="https://render.crafty.gg/3d/full/${playerUUID}" alt="${playerName}">`;
     playerSkin.id = "skin-container";
     container.appendChild(playerSkin);
 
