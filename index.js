@@ -64,7 +64,7 @@ app.get('/game/:name', (req, res) => {
   const gameName = req.params.name;
 
   res.sendFile(
-    path.join(__dirname, 'public', 'games', `${gameName}.html`)
+    path.join(__dirname, 'public', `${gameName}.html`)
   );
 });
 
