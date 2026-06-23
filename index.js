@@ -60,6 +60,14 @@ app.get('/player/:name', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'player.html'));
 });
 
+app.get('/game/:name', (req, res) => {
+  const gameName = req.params.name;
+
+  res.sendFile(
+    path.join(__dirname, 'public', 'games', `${gameName}.html`)
+  );
+});
+
 // Health check for Render
 app.get('/healthz', (req, res) => {
   res.status(200).send('OK');
