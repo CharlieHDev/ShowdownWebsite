@@ -686,6 +686,14 @@ p {
     border-radius: 1em;
 }
 
+#dimension-dash {
+    box-shadow: inset 0 0 2em 0 rgb(166, 3, 207);
+    background-image: url("libs/dimensiondashbg.png");
+    background-size: cover;
+    background-position-x: -11em;
+}
+
+
 #bridge-builders {
     background-image: url("libs/bridgebg.png");
         background-size: cover;
@@ -745,6 +753,14 @@ p {
     background-size: cover;
     background-position-x: -15em;
 }
+
+#final-showdown {
+    box-shadow: inset 0 0 2em 0 rgb(255, 90, 90);
+    background-image: url("libs/finalshowdownbg.png");
+    background-size: cover;
+    background-position-x: -11em;
+}
+
 
 footer {
     width: 100%;
