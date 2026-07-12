@@ -4,7 +4,7 @@ const suggestionsBox = document.getElementById("suggestions");
 
 window.addEventListener("scroll", navHighlighter);
 
-var splashText = "SEASON THREE COMING SOON";
+var splashText = "LET'S RUN IT BACK.";
 
 const splash = document.getElementById("splashtext");
 
