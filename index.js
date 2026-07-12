@@ -24,8 +24,10 @@ app.get('/discord', (req, res) => {
     res.redirect('https://discord.gg/fUZMZfMw34');
 });
 
+
+// Main redirect. (Chnage to events when they're on.)
 app.get('/', (req, res) => {
-  res.redirect('/seasonthree');
+  res.redirect('/home');
 });
 
 app.get('/seasonthree', (req, res) => {
