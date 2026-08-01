@@ -24,13 +24,18 @@ app.get('/discord', (req, res) => {
     res.redirect('https://discord.gg/fUZMZfMw34');
 });
 
+app.get('/seasonthree', (req, res) => {
+    res.redirect('https://mcshowdown.org/nextevent');
+});
+
 
 // Main redirect. (Chnage to events when they're on.)
 app.get('/', (req, res) => {
   res.redirect('/home');
 });
 
-app.get('/seasonthree', (req, res) => {
+
+app.get('/nextevent', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'event.html'));
 });
 
