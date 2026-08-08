@@ -4,7 +4,7 @@ const suggestionsBox = document.getElementById("suggestions");
 
 window.addEventListener("scroll", navHighlighter);
 
-var splashText = "LET'S RUN IT BACK.";
+var splashText = "SEASON 4 | AUGUST 29TH";
 
 const splash = document.getElementById("splashtext");
 
