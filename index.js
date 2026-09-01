@@ -24,6 +24,10 @@ app.get('/discord', (req, res) => {
     res.redirect('https://discord.gg/fUZMZfMw34');
 });
 
+app.get('/testing', (req, res) => {
+    res.redirect('https://docs.google.com/forms/d/e/1FAIpQLSfRSMlwspO1h6mm_K-1lsHtTdiU8tesly_boRaPwM2qvPZU7w/viewform?usp=dialog');
+});
+
 app.get('/seasonthree', (req, res) => {
     res.redirect('https://mcshowdown.org/nextevent');
 });
