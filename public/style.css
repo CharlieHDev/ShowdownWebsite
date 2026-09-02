@@ -724,6 +724,12 @@ p {
     background-position-x: -15em;
 }
 
+#sulfur-golf {
+    background-image: url("libs/SulfurBG.png");
+    background-size: cover;
+    background-position-x: -15em;
+}
+
 #sg {
     background-image: url("libs/sgbg.png");
     background-size: cover;
@@ -1469,6 +1475,10 @@ figure img:hover {
         background-position-x: 0em;
     }
 
+    #sulfur-golf {
+        background-position-x: 0em;
+    }
+
     #sg {
         background-position-x: 0em;
     }
@@ -1877,6 +1887,10 @@ figure img:hover {
 
     #slime-golf {
         background-position-y: -7em;
+    }
+
+    #sulfur-golf {
+        background-position-x: -7em;
     }
 
     #sg {
