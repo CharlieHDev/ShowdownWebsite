@@ -4,7 +4,7 @@ const suggestionsBox = document.getElementById("suggestions");
 
 window.addEventListener("scroll", navHighlighter);
 
-var splashText = "SEASON FOUR: AUGUST 29TH";
+var splashText = "PIXELS OF HOPE: OCTOBER 7TH";
 
 const splash = document.getElementById("splashtext");
 
