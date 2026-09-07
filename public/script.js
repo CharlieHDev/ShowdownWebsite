@@ -13,6 +13,31 @@ let teamArticle;
 const menuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 
+const searchInput2 = document.getElementById('event-search');
+const canonCheckbox = document.getElementById('filter-canon');
+const nonCanonCheckbox = document.getElementById('filter-non-canon');
+const options2 = document.querySelectorAll('.option.event-panel');
+
+function applyFilters() {
+    const query = searchInput2.value.trim().toLowerCase();
+    const showCanon = canonCheckbox.checked;
+    const showNonCanon = nonCanonCheckbox.checked;
+
+    options2.forEach(option => {
+        const eventName = option.dataset.event.toLowerCase();
+        const isNonCanon = option.querySelector('p').classList.contains('non-canon');
+
+        const matchesSearch = eventName.includes(query);
+        const matchesCanonFilter = isNonCanon ? showNonCanon : showCanon;
+
+        option.classList.toggle('filtered-out', !(matchesSearch && matchesCanonFilter));
+    });
+}
+
+searchInput2.addEventListener('input', applyFilters);
+canonCheckbox.addEventListener('change', applyFilters);
+nonCanonCheckbox.addEventListener('change', applyFilters);
+
 menuBtn.addEventListener('click', () => {
   mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
 });
@@ -32,16 +57,19 @@ if (window.location.pathname === "/testevent") {
 document.addEventListener("DOMContentLoaded", function () {
 
     const selectedPanel = document.querySelector(".selected img");
+    const selectedName = document.querySelector(".selected p"); // grab the new <p>
 
     if (defaultEvent === "Showdown X Lads") {
         selectedPanel.src = "libs/showdownlads.png";
         selectedPanel.alt = "Showdown X Lads";
+        selectedName.textContent = "Showdown X Lads";
         loadLeaderboards(defaultEvent);
         return;
     }
     if (defaultEvent === "Test 15/06/2026") {
         selectedPanel.src = "libs/2026backdrop.png";
         selectedPanel.alt = "Test 15/06/2026";
+        selectedName.textContent = "Test 15/06/2026";
         loadLeaderboards(defaultEvent);
         return;
     }

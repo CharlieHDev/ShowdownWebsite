@@ -71,25 +71,45 @@
             <section class="event-dropdown">
                 <section class="selected event-panel">
                     <img src="libs/seasonone.png" alt="Season One">
+                    <p class="event-name">Select an event</p>
                 </section>
 
                 <section class="options" style="display:none;">
+                    <section class="event-filters">
+                    <input type="text" id="event-search" placeholder="Search events...">
+                    <section id="event-labels">
+                        <label>
+                            <input type="checkbox" id="filter-canon" checked>
+                            Canon
+                        </label>
+                        <label>
+                            <input type="checkbox" id="filter-non-canon" checked>
+                            Non-canon
+                        </label>
+                    </section>
+                </section>
                     <section class="option event-panel" data-event="Season One" data-src="libs/seasonone.png">
+                        <p class="event-name">Season One</p>
                         <img src="libs/seasonone.png" alt="Season One">
                     </section>
                     <section class="option event-panel" data-event="Afterparty" data-src="libs/showdownpartybanner.png">
+                        <p class="event-name non-canon">Afterparty</p>
                         <img src="libs/showdownpartybanner.png" alt="Showdown Party">
                     </section>
                     <section class="option event-panel" data-event="Season Two" data-src="libs/SeasonTwoBanner.png">
+                        <p class="event-name">Season Two</p>
                         <img src="libs/SeasonTwoBanner.png" alt="Season Two">
                     </section>
                     <section class="option event-panel" data-event="Once Upon A Showdown" data-src="libs/OUASBanner.png">
+                        <p class="event-name non-canon">Once Upon A Showdown</p>
                         <img src="libs/OUASBanner.png" alt="OUAS">
                     </section>
                     <section class="option event-panel" data-event="Season Three" data-src="libs/SeasonThree.png">
+                        <p class="event-name">Season Three</p>
                         <img src="libs/SeasonThree.png" alt="Season Three">
                     </section>
                     <section class="option event-panel" data-event="Season Four" data-src="libs/S4Banner.png">
+                        <p class="event-name">Season Four</p>
                         <img src="libs/S4Banner.png" alt="Season Four">
                     </section>
                 </section>
