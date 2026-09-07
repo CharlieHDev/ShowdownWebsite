@@ -456,9 +456,8 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: blur(6px);
+    filter: blur(6px) brightness(0.7);
     z-index: 0;
-    opacity: 0.6;
 }
 
 #event-stats .event-name {

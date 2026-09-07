@@ -62,14 +62,12 @@ document.addEventListener("DOMContentLoaded", function () {
     if (defaultEvent === "Showdown X Lads") {
         selectedPanel.src = "libs/showdownlads.png";
         selectedPanel.alt = "Showdown X Lads";
-        selectedName.textContent = "Showdown X Lads";
         loadLeaderboards(defaultEvent);
         return;
     }
     if (defaultEvent === "Test 15/06/2026") {
         selectedPanel.src = "libs/2026backdrop.png";
         selectedPanel.alt = "Test 15/06/2026";
-        selectedName.textContent = "Test 15/06/2026";
         loadLeaderboards(defaultEvent);
         return;
     }
