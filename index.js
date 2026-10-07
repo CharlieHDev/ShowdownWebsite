@@ -24,6 +24,10 @@ app.get('/discord', (req, res) => {
     res.redirect('https://discord.gg/fUZMZfMw34');
 });
 
+app.get('/charity', (req, res) => {
+    res.redirect('https://tilt.fyi/eS3iung7M2');
+});
+
 app.get('/testing', (req, res) => {
     res.redirect('https://docs.google.com/forms/d/e/1FAIpQLSfRSMlwspO1h6mm_K-1lsHtTdiU8tesly_boRaPwM2qvPZU7w/viewform?usp=dialog');
 });
